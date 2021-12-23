@@ -28,3 +28,5 @@ I simulated varying levels of probability of heterocarpochory occuring and compa
 ## Sharing and Accessing Information
 See license
 
+[![DOI](https://zenodo.org/badge/401868369.svg)](https://zenodo.org/badge/latestdoi/401868369)
+
