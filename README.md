@@ -14,10 +14,10 @@ masond@ufl.edu
 ### Summary
 This script simulates seed dispersal scenarios presented in ECY21-0649.R1 "Heterocarpochory: hitching a ride on fruit" based on dispersal kernels and parameters presented in Bullock et al. 2017
 
-Paper  
+**Paper**  
 Bullock, J. M., Mallada González, L., Tamme, R., Götzenberger, L., White, S. M., Pärtel, M., & Hooftman, D. A. (2017). A synthesis of empirical plant dispersal kernels. Journal of Ecology, 105(1), 6-19. https://doi.org/10.1111/1365-2745.12666.
 
-Data
+**Data**  
 Bullock, J. M. et al. (2017), Data from: A synthesis of empirical plant dispersal kernels, Dryad, Dataset, https://doi.org/10.5061/dryad.mq2ff.
 
 ## Methodology
