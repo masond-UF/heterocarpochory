@@ -173,8 +173,8 @@ comb.kernel <- rbind(Hetero.1,Hetero.10,Hetero.30)
 # Create histogram figure ####
 
 # Make Distance numeric
-comb.kernel$Distance <- as.numeric(comb.kernel$Distance)
-wind.only$Distance <- as.numeric(wind.only$Distance)
+comb.kernel$Distance <- as.numeric(as.character(comb.kernel$Distance))
+wind.only$Distance <- as.numeric(as.character(wind.only$Distance))
 
 # Drop the kernel description for wind-only so facet-wrap doesn't
 # get tripped up
@@ -248,36 +248,36 @@ wind.only %>% filter(Distance > 20 & Distance <=200) # 1 observations
 
 # Calculate number of long distance dispersal events ####
 wind.only <- as.data.frame(df.list[[1]])
-wind.only$Distance <- as.numeric(wind.only$Distance)
+wind.only$Distance <- as.numeric(as.character(wind.only$Distance))
 max(wind.only$Distance) # 23.11
 length(which(wind.only$Distance>=100)) # 0
 
 Hetero.1 <- as.data.frame(df.list[[2]])
-Hetero.1$Distance <- as.numeric(Hetero.1$Distance)
+Hetero.1$Distance <- as.numeric(as.character(Hetero.1$Distance))
 max(Hetero.1$Distance) # 235.96
 length(which(Hetero.1$Distance>=100)) # 93
 93/5000
 
 Hetero.5 <- as.data.frame(df.list[[3]])
-Hetero.5$Distance <- as.numeric(Hetero.5$Distance)
+Hetero.5$Distance <- as.numeric(as.character(Hetero.5$Distance))
 max(Hetero.5$Distance) # 237.26
 length(which(Hetero.5$Distance>=100)) # 502
 502/5000
 
 Hetero.10 <- as.data.frame(df.list[[4]])
-Hetero.10$Distance <- as.numeric(Hetero.10$Distance)
+Hetero.10$Distance <- as.numeric(as.character(Hetero.10$Distance))
 max(Hetero.10$Distance) # 237.75
 length(which(Hetero.10$Distance>=100)) # 943
 943/5000
 
 Hetero.20 <- as.data.frame(df.list[[5]])
-Hetero.20$Distance <- as.numeric(Hetero.20$Distance)
+Hetero.20$Distance <- as.numeric(as.character(Hetero.20$Distance))
 max(Hetero.20$Distance) # 237.59
 length(which(Hetero.20$Distance>=100)) # 1601
 1601/5000
 
 Hetero.30 <- as.data.frame(df.list[[6]])
-Hetero.30$Distance <- as.numeric(Hetero.30$Distance)
+Hetero.30$Distance <- as.numeric(as.character(Hetero.30$Distance))
 max(Hetero.30$Distance) # 240.81
 length(which(Hetero.30$Distance>=100)) # 2338
 2338/5000
